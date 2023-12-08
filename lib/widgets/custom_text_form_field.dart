@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled7/utils/app_colors.dart';
 
 class CustomTextFormField extends StatefulWidget {
   //Her bir textform field alanına yazılan metin ayrı ayrı kullanılacağı için ayrı ayrı controllerlara ihtiyacım var bunu da parametre ile gönderiyorum
@@ -15,8 +16,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
     return Container(
       padding: EdgeInsets.only(left: 10,),
       decoration: BoxDecoration(
-        //container içini boyar
-        color: Colors.white,
+        border: Border.all(color: AppColors.darkRed,width: 2),
         //container ın köşelerini yuvarlar
         borderRadius: BorderRadius.circular(15)
       ),
@@ -29,7 +29,6 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         onEditingComplete: (){
           print("yazma işlemi tamamlandı");
         },
-
       ),
     );
   }

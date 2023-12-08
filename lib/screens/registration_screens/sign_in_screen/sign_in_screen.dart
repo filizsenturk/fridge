@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled7/screens/registration_screens/sign_in_screen/sign_in_btn.dart';
 import 'package:untitled7/screens/registration_screens/sign_in_screen/sign_in_field.dart';
 import 'package:untitled7/screens/registration_screens/sign_in_screen/starter_text.dart';
+import 'package:untitled7/utils/app_colors.dart';
 
 class SignInScreen extends StatefulWidget {
    SignInScreen({super.key});
@@ -11,15 +12,12 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
-  Color backgroundColor =  Color.fromRGBO(254, 205, 72, 100);
+
 
   @override
   Widget build(BuildContext context) {
-    Size screenSize = MediaQuery.of(context).size;
-    double width = screenSize.width;
-    double height = screenSize.height;
     return  Scaffold(
-      backgroundColor: backgroundColor,
+      backgroundColor: AppColors.backgroundColor,
       body: Container(
         child: Column(
           children: [

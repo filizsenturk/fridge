@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled7/screens/home_screen/home_screen.dart';
 import 'package:untitled7/widgets/custom_button.dart';
 import 'package:untitled7/widgets/custom_text.dart';
 
@@ -10,12 +11,13 @@ class SignInBtn extends StatefulWidget {
 }
 
 class _SignInBtnState extends State<SignInBtn> {
+  onSignInClicked(){
+    print("Sign In butonuna basıldı");
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+  }
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    double width = size.width;
-    double height = size.height;
-    return CustomButton(title: 'Giriş yap',);
+    return CustomButton(title: 'Giriş yap',onTap: onSignInClicked,);
   }
 }
