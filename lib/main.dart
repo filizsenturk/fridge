@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
     return Sizer(
         builder: (context, orientation, screenType) {
         return MaterialApp(
-          title: 'Flutter Demo',
+          debugShowCheckedModeBanner: false,
+          title: 'Soğuk Bekçi',
           home:SignUpScreen()
         );
       }
