@@ -1,19 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
-import 'package:untitled7/screens/home_screen/custom_bottom_bar.dart';
+import 'package:untitled7/widgets/custom_bottom_bar.dart';
+import 'package:untitled7/screens/home_screen/home_body.dart';
+import 'package:untitled7/logic/cubit/select_screen_cubit.dart';
 import 'package:untitled7/utils/app_colors.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundColor,
-      appBar: buildAppBar(),
-      body: Center(
-        child: CustomBottomBar(),
-      )
+        backgroundColor: AppColors.backgroundColor,
+        appBar: buildAppBar(),
+        body: BlocBuilder<SelectScreenCubit, int>(
+          builder: (context, state) {
+            return Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  state==0 ? HomeBody() : Container(
+                    child: Center(child: Text("Ekleme"),),),
+                  CustomBottomBar()
+                ],
+              ),
+            );
+          },
+        )
     );
   }
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
+import 'package:untitled7/screens/registration_screens/sign_up_screen/sign_in_text.dart';
 import 'package:untitled7/screens/registration_screens/sign_up_screen/sign_up_btn.dart';
 import 'package:untitled7/screens/registration_screens/sign_up_screen/sign_up_fields.dart';
 import 'package:untitled7/utils/app_colors.dart';
@@ -18,7 +19,7 @@ class SignUpScreen extends StatelessWidget {
             buildImage(),
             SignUpFields(),
             SignUpBtn(),
-           // SignInText(),
+            SignInText(),
           ],
         ),
       ),
@@ -27,8 +28,8 @@ class SignUpScreen extends StatelessWidget {
 
   Padding buildImage() {
     return Padding(
-      padding:  EdgeInsets.only(top:8.h),
-      child: Image.asset("assets/fridge2.png",width: 52.w,),
+      padding:  EdgeInsets.only(top:8.h,bottom: 2.h),
+      child: Image.asset("assets/fridge2.png",width: 52.w,height: 20.h,),
     );
   }
 }

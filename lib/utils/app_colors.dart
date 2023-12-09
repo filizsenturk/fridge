@@ -9,4 +9,5 @@ class AppColors{
   static final customTextColor = HexColor('#bb2525');
   static final customButtonTextColor = HexColor('#ffffff');
   static final customAppBarColor = HexColor('#141e46');
+  static final bottomBarButtonBackgroundColor=HexColor('#ff6969');
 }

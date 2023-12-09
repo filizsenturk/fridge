@@ -18,7 +18,7 @@ class _SignUpFieldsState extends State<SignUpFields> {
   Widget build(BuildContext context) {
     return Container(
       width: 100.w,
-      height: 40.h,
+      height: 47.h,
       margin: EdgeInsets.only(left: 10.w,right: 10.w),
       child: Column(
        // mainAxisAlignment: ,

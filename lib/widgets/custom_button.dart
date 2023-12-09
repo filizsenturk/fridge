@@ -21,7 +21,7 @@ class _CustomButtonState extends State<CustomButton> {
         alignment: Alignment.center,
         margin: EdgeInsets.only(left: 10.w,right: 10.w),
         width: 100.w,
-        height: 6.h,
+        height: 8.h,
         decoration: BoxDecoration(
           color: AppColors.customBtnColor,
           borderRadius: BorderRadius.circular(15),
