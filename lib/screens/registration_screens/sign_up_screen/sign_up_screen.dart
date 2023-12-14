@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
+import 'package:untitled7/screens/registration_screens/sign_in_sign_up_text.dart';
 import 'package:untitled7/screens/registration_screens/sign_up_screen/sign_up_btn.dart';
 import 'package:untitled7/screens/registration_screens/sign_up_screen/sign_up_fields.dart';
 import 'package:untitled7/utils/app_colors.dart';
@@ -18,7 +19,7 @@ class SignUpScreen extends StatelessWidget {
             buildImage(),
             SignUpFields(),
             SignUpBtn(),
-           // SignInText(),
+            SignInSignUpText(),
           ],
         ),
       ),

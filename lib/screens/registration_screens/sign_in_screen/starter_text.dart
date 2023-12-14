@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 class StarterText extends StatelessWidget {
   const StarterText({super.key});
@@ -7,7 +8,7 @@ class StarterText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset("assets/fridge.png",),
+        Image.asset("assets/fridge.png",height: 8.h,),
         Text("Soğuk Bekçi Uygulamasına hoşgeldiniz")
       ],
     );
